@@ -1,0 +1,94 @@
+body {
+    background-image: url('/CSS/over-50-frutiger-aero-wallpapers-2008ify-your-pc-v0-sokqnpc2nz9b1.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    line-height: 1.6;
+    min-height: 100vh; 
+}
+
+/* -----------------------------------
+   2. ESTILOS DE ELEMENTOS BASE
+   ----------------------------------- */
+h1 {
+    text-align: center;
+    color: white; /* Mejor contraste sobre fondo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+label, input, button {
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    /* Estilo Glass para inputs */
+    background-color: rgba(255, 255, 255, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px; /* Borde más redondeado */
+}
+
+button {
+    padding: 12px 15px;
+    background-color: rgba(40, 167, 69, 0.8); /* Verde con ligera transparencia */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* -----------------------------------
+   ESTILO LIQUID GLASS (para estos estilos me basé e un foro de reddit
+   https://www.reddit.com/r/webdev/comments/1l8opcl/liquid_glass_effect_with_css_js_live_controls_demo/) 
+   ----------------------------------- */
+#resultado-imc {
+    background-color: rgba(255, 255, 255, 0.089);
+    
+    backdrop-filter: blur(8px);
+    
+    box-shadow: 
+        0 8px 24px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px -5px rgba(255, 255, 255, 0.7);
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px; 
+    
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+/*aqui le puse para que el resultado de el IMC resalte entre los demás elementos*/
+#valor-imc {
+    font-size: 1.8em;
+    color: #000000; 
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/*aqui tambien hice un poquito de enfasis poniendo mas gruesa la letra para la categoría*/
+#categoria-imc {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+#imagen-imc {
+    max-width: 80%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
